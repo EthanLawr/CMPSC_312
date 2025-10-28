@@ -13,8 +13,8 @@ sw $t6, 0($sp)          # M[$sp + 0] = M[8184] = $t6
 addi $sp, $sp, -4       # $sp = $sp + -4 = 8180
 
 
-## Pop the return value to $t1, then remove space for argument on stack.
-Update $sp appropriately.
+# Pop the return value to $t1, then remove space for argument on stack.
+# Update $sp appropriately.
 
 lw $t1, 0($sp)          # $t1 = M[$sp + 0] = M[8180]
 addi $sp, $sp, 4        # $sp = $sp + 4 = 8184
